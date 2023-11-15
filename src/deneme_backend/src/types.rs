@@ -12,7 +12,7 @@ pub struct BasicServiceStorage {
     pub user_count: u32,
 }
 
-#[derive(Clone, Debug, Default, CandidType, Deserialize)]
+#[derive(Clone, Debug, Default, CandidType, Deserialize, PartialEq, Eq, Hash)]
 pub struct Person {
     pub name: String,
     pub age: u32,

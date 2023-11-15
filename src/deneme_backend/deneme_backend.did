@@ -5,8 +5,7 @@ type Person = record {
 
 service : {
     "greet": (text) -> (text) query;
-    "get_user_count": () -> (nat32) query;
+    "get_user_count": () -> (nat64) query;
     "add_new_user": (text, nat32) -> ();
     "get_list_users": () -> (vec Person) query;
-    "get_logs": () -> (vec text) query;
 }
