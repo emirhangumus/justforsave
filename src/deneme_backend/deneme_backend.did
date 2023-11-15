@@ -1,0 +1,12 @@
+type Person = record {
+    name: text;
+    age: nat32;
+}
+
+service : {
+    "greet": (text) -> (text) query;
+    "get_user_count": () -> (nat32) query;
+    "add_new_user": (text, nat32) -> ();
+    "get_list_users": () -> (vec Person) query;
+    "get_logs": () -> (vec text) query;
+}
